@@ -1,0 +1,93 @@
+[gd_scene load_steps=10 format=3 uid="uid://dotfidry0pwtr"]
+
+[ext_resource type="Texture2D" uid="uid://burbla1m66olp" path="res://addons/Tiny Swords/UI/Banners/Banner_Horizontal.png" id="1_8ggdb"]
+[ext_resource type="Script" path="res://ui/game_ui.gd" id="1_h6uu3"]
+[ext_resource type="Texture2D" uid="uid://bp8cv1rggjef1" path="res://addons/Tiny Swords/Resources/Resources/Special Icons.png" id="3_rr26u"]
+
+[sub_resource type="SystemFont" id="SystemFont_momsq"]
+font_names = PackedStringArray("Jokerman")
+
+[sub_resource type="LabelSettings" id="LabelSettings_qjsdh"]
+font = SubResource("SystemFont_momsq")
+font_size = 34
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rec8o"]
+texture = ExtResource("1_8ggdb")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 64.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(32, 48, 128, 128)
+
+[sub_resource type="SystemFont" id="SystemFont_vsq1f"]
+font_names = PackedStringArray("Jokerman")
+
+[sub_resource type="LabelSettings" id="LabelSettings_7nvww"]
+font = SubResource("SystemFont_vsq1f")
+font_size = 34
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgf47"]
+atlas = ExtResource("3_rr26u")
+region = Rect2(96, 16, 16, 16)
+
+[node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_h6uu3")
+
+[node name="TimeLabel" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -25.0
+offset_top = 12.0
+offset_right = 25.0
+offset_bottom = 44.0
+grow_horizontal = 2
+text = "08:55"
+label_settings = SubResource("LabelSettings_qjsdh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -318.0
+offset_top = 17.0
+offset_right = -21.0
+offset_bottom = 149.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_rec8o")
+
+[node name="GoldLabel" type="Label" parent="Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -41.0
+offset_right = 37.5
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "10"
+label_settings = SubResource("LabelSettings_7nvww")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 22.0
+offset_right = 85.0
+offset_bottom = 62.0
+scale = Vector2(1.63263, 1.40935)
+texture = SubResource("AtlasTexture_vgf47")

@@ -1,0 +1,210 @@
+[gd_scene load_steps=8 format=3 uid="uid://cmmdcuw2w3705"]
+
+[ext_resource type="Texture2D" uid="uid://beofd6cyuca82" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Red/Warrior_Red.png" id="1_hpkuc"]
+[ext_resource type="PackedScene" uid="uid://btb1vp7ac1u1x" path="res://player/player.tscn" id="2_1l8tv"]
+[ext_resource type="Texture2D" uid="uid://cxt5n8jfoli1j" path="res://addons/Tiny Swords/Factions/Knights/Troops/Pawn/Blue/Pawn_Blue.png" id="3_j3gaa"]
+[ext_resource type="PackedScene" uid="uid://cmadajmgkgluo" path="res://enemies/pawn.tscn" id="4_7ljat"]
+[ext_resource type="PackedScene" uid="uid://xuvau7s07i57" path="res://enemies/goblin.tscn" id="5_mqxe5"]
+[ext_resource type="PackedScene" uid="uid://dwdqw0gxa4med" path="res://enemies/sheep.tscn" id="6_325yl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rh41m"]
+line_spacing = 80.0
+font_size = 25
+
+[node name="Test Player" type="Node2D"]
+
+[node name="WarriorRed" type="Sprite2D" parent="."]
+position = Vector2(2270, 838)
+texture = ExtResource("1_hpkuc")
+
+[node name="Label" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -658.968
+offset_top = -783.16
+offset_right = -613.968
+offset_bottom = -748.16
+scale = Vector2(1.70452, 1.67715)
+text = "Idle"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -1736.97
+offset_top = -917.16
+offset_right = -1122.97
+offset_bottom = -882.16
+scale = Vector2(1.70452, 1.67715)
+text = "0               1              2               3              4               5"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -1823.97
+offset_top = -786.16
+offset_right = -1798.97
+offset_bottom = 85.84
+scale = Vector2(1.70452, 1.67715)
+text = "01234567"
+label_settings = SubResource("LabelSettings_rh41m")
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -650.968
+offset_top = -600.16
+offset_right = -605.968
+offset_bottom = -565.16
+scale = Vector2(1.70452, 1.67715)
+text = "Run"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -643.968
+offset_top = -402.16
+offset_right = -598.968
+offset_bottom = -367.16
+scale = Vector2(1.70452, 1.67715)
+text = "Attack side 1"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -642.968
+offset_top = -216.16
+offset_right = -597.968
+offset_bottom = -181.16
+scale = Vector2(1.70452, 1.67715)
+text = "Attack side 2"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -657.968
+offset_top = -27.1599
+offset_right = -612.968
+offset_bottom = 7.84006
+scale = Vector2(1.70452, 1.67715)
+text = "Attack down 1"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -623.968
+offset_top = 160.84
+offset_right = -578.968
+offset_bottom = 195.84
+scale = Vector2(1.70452, 1.67715)
+text = "Attack down 2"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -627.968
+offset_top = 355.84
+offset_right = -582.968
+offset_bottom = 390.84
+scale = Vector2(1.70452, 1.67715)
+text = "Attack up 1"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = 1.059
+anchor_top = 0.06
+anchor_right = 1.059
+anchor_bottom = 0.06
+offset_left = -653.968
+offset_top = 554.84
+offset_right = -608.968
+offset_bottom = 589.84
+scale = Vector2(1.70452, 1.67715)
+text = "Attack up 2"
+label_settings = SubResource("LabelSettings_rh41m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" parent="." instance=ExtResource("2_1l8tv")]
+position = Vector2(591, 350)
+ritual_damage = 3
+
+[node name="PawnBlue" type="Sprite2D" parent="."]
+position = Vector2(2259, 2283)
+texture = ExtResource("3_j3gaa")
+
+[node name="Pawn" parent="." instance=ExtResource("4_7ljat")]
+position = Vector2(935, 110)
+
+[node name="Goblin" parent="." instance=ExtResource("5_mqxe5")]
+position = Vector2(1242, 404)
+
+[node name="Sheep" parent="." instance=ExtResource("6_325yl")]
+position = Vector2(1051, 513)
+
+[node name="Sheep2" parent="." instance=ExtResource("6_325yl")]
+position = Vector2(1002, 595)
+
+[node name="Pawn2" parent="." instance=ExtResource("4_7ljat")]
+position = Vector2(951, 523)
+
+[node name="Pawn3" parent="." instance=ExtResource("4_7ljat")]
+position = Vector2(1100, 621)
+
+[node name="Sheep3" parent="." instance=ExtResource("6_325yl")]
+position = Vector2(819, 600)
+
+[node name="Sheep4" parent="." instance=ExtResource("6_325yl")]
+position = Vector2(1047, 238)
+
+[node name="Pawn4" parent="." instance=ExtResource("4_7ljat")]
+position = Vector2(1032, 372)
+
+[node name="Sheep5" parent="." instance=ExtResource("6_325yl")]
+position = Vector2(840, 72)
+
+[node name="Goblin2" parent="." instance=ExtResource("5_mqxe5")]
+position = Vector2(1451, 108)

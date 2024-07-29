@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://4pgl704xw3uy"]
+
+[ext_resource type="Texture2D" uid="uid://bp8cv1rggjef1" path="res://addons/Tiny Swords/Resources/Resources/Special Icons.png" id="1_r81o6"]
+[ext_resource type="Script" path="res://random/gold.gd" id="2_jepbk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykld4"]
+atlas = ExtResource("1_r81o6")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmhvr"]
+atlas = ExtResource("1_r81o6")
+region = Rect2(96, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfprh"]
+atlas = ExtResource("1_r81o6")
+region = Rect2(96, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k66gn"]
+atlas = ExtResource("1_r81o6")
+region = Rect2(96, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nj2tt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykld4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmhvr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfprh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k66gn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d73gh"]
+radius = 4.95238
+height = 14.4
+
+[node name="Gold" type="AnimatedSprite2D"]
+position = Vector2(3, -19)
+scale = Vector2(5.28125, 4.875)
+sprite_frames = SubResource("SpriteFrames_nj2tt")
+autoplay = "default"
+frame_progress = 0.712759
+script = ExtResource("2_jepbk")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-0.380952, -0.4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 0.4)
+shape = SubResource("CapsuleShape2D_d73gh")

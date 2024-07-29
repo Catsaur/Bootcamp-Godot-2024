@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://ce6bixmfx3uqu"]
+
+[ext_resource type="PackedScene" uid="uid://btb1vp7ac1u1x" path="res://player/player.tscn" id="1_g1do0"]
+[ext_resource type="PackedScene" uid="uid://dotfidry0pwtr" path="res://ui/game_ui.tscn" id="2_821tt"]
+[ext_resource type="PackedScene" uid="uid://xuvau7s07i57" path="res://enemies/goblin.tscn" id="3_718lq"]
+[ext_resource type="PackedScene" uid="uid://b1vbeik5x4rvl" path="res://random/heart.tscn" id="4_7501w"]
+[ext_resource type="PackedScene" uid="uid://dwdqw0gxa4med" path="res://enemies/sheep.tscn" id="5_447xv"]
+[ext_resource type="PackedScene" uid="uid://cmadajmgkgluo" path="res://enemies/pawn.tscn" id="6_g8q0t"]
+[ext_resource type="PackedScene" uid="uid://4pgl704xw3uy" path="res://random/gold.tscn" id="7_lprp4"]
+
+[node name="TestUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_g1do0")]
+position = Vector2(561, 339)
+
+[node name="GameUI" parent="." instance=ExtResource("2_821tt")]
+
+[node name="Goblin" parent="." instance=ExtResource("3_718lq")]
+position = Vector2(992, 348)
+
+[node name="Heart" parent="." instance=ExtResource("4_7501w")]
+position = Vector2(99, 225)
+
+[node name="Sheep" parent="." instance=ExtResource("5_447xv")]
+position = Vector2(996, 496)
+
+[node name="Sheep2" parent="." instance=ExtResource("5_447xv")]
+position = Vector2(926, 584)
+
+[node name="Pawn" parent="." instance=ExtResource("6_g8q0t")]
+position = Vector2(1112, 423)
+
+[node name="Gold" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(171, 298)
+
+[node name="Gold2" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(210, 463)
+
+[node name="Gold3" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(464, 585)
+
+[node name="Gold4" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(404, 69)
+
+[node name="Gold5" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(789, 564)
+
+[node name="Gold6" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(814, 325)
+
+[node name="Gold7" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(676, 79)
+
+[node name="Gold8" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(67, 609)
+
+[node name="Gold9" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(1095, 574)
+
+[node name="Gold10" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(1078, 190)
+
+[node name="Gold11" parent="." instance=ExtResource("7_lprp4")]
+position = Vector2(50, 91)
