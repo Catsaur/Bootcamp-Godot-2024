@@ -4,7 +4,7 @@ O presente projeto foi desenvolvido na trilha de aprendizagem do Bootcamp Santan
 
 Começamos com a criação do player, após a escolha do pacote de assets, configuramos o sprite do jogador, com suas animações básicas de movimento e ataque. Em seguida, implementamos a mecânica de controle do player para se mover em todas as direções, utilizando WASD ou as teclas direcionais(setas) do teclado, e atacar inimigos próximos. Foram programados dois ataques com a espada, acionando o botão esquerdo do mouse para um(ou a tecla de espaço - Space) e o botão direito do mouse para outro(ou a tecla Enter/Return). Além disso, adicionamos uma mecânica especial onde o player possui um ritual de dano circular automático, disparado a cada 15 segundos. Esse ataque causa dano a todos os inimigos dentro de um determinado raio ao redor do player, proporcionando uma mecânica adicional de defesa.
  
-Depois de configurar o player, passamos para o desenvolvimento e animações dos inimigos, sendo a Ovelha, o Peão e o Goblin. Programamos os scripts para os inimigos se comportarem cada um de uma forma diferente, sendo velocidade, tamanho e dano. Além disso, todos os inimigos seguem o player durante o todo o tempo de jogo. Também desenvolvemos o sistema de colisão para que os inimigos possam colidir e causar dano no player. Desenhamos e montamos o fundo/background do jogo com gramado, graminhas, arbustos e cogumelos. Definimos os limites do mundo do jogo para garantir que o player e os inimigos permaneçam dentro do ambiente e não saiam da área visível.
+Depois de configurar o player, passamos para o desenvolvimento e animações dos inimigos, sendo a Ovelha, o Peão e o Goblin. Programamos os scripts para os inimigos se comportarem cada um de uma forma diferente, sendo velocidade, tamanho e dano. Além disso, todos os inimigos seguem o player durante todo o tempo de jogo. Também desenvolvemos o sistema de colisão para que os inimigos possam colidir e causar dano no player. Desenhamos e montamos o fundo/background do jogo com gramado, graminhas, arbustos e cogumelos. Definimos os limites do mundo do jogo para garantir que o player e os inimigos permaneçam dentro do ambiente e não saiam da área visível.
 
 Elaboramos uma interface de usuário (UI) intuitiva que mostra informações essenciais, como a barra vida do player, a quantidade de moedinhas coletadas, e o tempo de jogo. Também desenvolvemos uma tela de game over que exibe o tempo de jogo e o número total de inimigos derrotados pelo player ao final da partida.
 
@@ -19,7 +19,8 @@ Mecânicas e interações importantes do jogo:
 
 Ao finalizar o projeto, conseguimos concluir um protótipo de jogo 2D funcional e divertido, seguindo a trilha de aprendizagem do Bootcamp com as orientações do Rafa Skoberg. 
 
-![Tela do Little Sir Knight](C:\Users\camil\Desktop\Coisas da Cat\teste1.png)
+![teste1](https://github.com/user-attachments/assets/398ba83a-f816-4b93-a9b5-2cdf96f5eb4c)
+
 
 ## Controles principais:
 
